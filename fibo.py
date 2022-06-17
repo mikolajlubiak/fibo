@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from sys import argv
 
 def fibo(x, y, z):
@@ -7,12 +9,9 @@ def fibo(x, y, z):
         fibo.append(fibo[i-1] + fibo[i-2])
         print(f"{i+1}: {fibo[i]}")
 
-def main():
+if __name__ == "__main__":
     try:
         fibo(int(argv[3]), int(argv[1]), int(argv[2]))
     except:
         print("You have to provide 3 arguments - first number, secound number, how many numbers to calculate.\nExample:\t./fibo 0 1 10\n")
-        return 1
-    return 0
-
-main()
+        yield ValueError("Not enough arguments!")
