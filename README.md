@@ -1,4 +1,7 @@
-# Codes, in multiple languages, that calculate Fibonacci seqence.
+# FIBO
+## Programs, in multiple languages, that calculate Fibonacci seqence.
 
-## Usage:
-### `./fibo "first number" "secound number" "how many numbers to calculate"`, eg. `./fibo.py 0 1 100`
+# Usage:
+	./fibo "first number" "secound number" "how many numbers to calculate"
+# Example:
+	python fibo.py 0 1 100
